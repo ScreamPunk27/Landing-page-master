@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+    --strongCyan:hsl(171, 66%, 44%);
+    --lightBlue:hsl(233, 100%, 69%);
+
+    --darkGrayishBlue:hsl(210, 10%, 33%);
+    --grayishBlue:hsl(201, 11%, 66%);
+
+    --myFont:18px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    font-family: 'Bai Jamjuree',sans-serif;
+}
+
+.landing{
+    padding: 1rem;
+    text-align: center;
+}
+
+.heading{
+    color: var(--darkGrayishBlue);
+    margin: 1rem 0;
+}
+
+.subheading{
+    color: var(--darkGrayishBlue);
+}
+
+.text{
+    color: var(--grayishBlue);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+button{
+    padding: 1rem 5rem;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree',sans-serif;
+    cursor: pointer;
+    box-shadow: inset 0 -3px rgba(0,0,0,.5);
+}
+
+button:hover{
+    filter: brightness(120%);
+}
+
+.container__buttons{
+    margin-top: 2rem;
+}
+
+.container__buttons button:nth-child(1){
+    background: var(--strongCyan);
+    margin-bottom: 1.5rem;
+}
+
+.container__buttons button:nth-child(2){
+    background: var(--lightBlue);
+}
+
+
+/*HEADER*/
+
+header{
+    margin-top: 7rem;
+}
+
+.header__logo{
+    margin-bottom: 3rem;
+}
+
+
+
+section{
+    margin: 5rem 0;
+}
+
+.container-img{
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.container-img img{
+    width: 100%;
+}
+
+
+.icons article{
+    margin: 5rem 0;
+}
+
+.companies{
+
+}
+
+.companies .container-img{
+    width:auto;
+}
+
+.companies .container-img img{
+    width: auto;
+}
+
+.landing footer{
+    margin-top: 5rem;
+}
+
+.footer__logo{
+    margin-bottom: 2rem;
+}
+
+.footer__logo img{
+    width: 50px;
+}
+
+.footer__links li{
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.footer__links li a{
+    text-decoration: none;
+    color: var(--darkGrayishBlue);
+}
+
+.footer__links li a:hover{
+    color: var(--strongCyan);
+}
+
+.footer__social{
+    margin-top: 2rem;
+}
+
+.footer__social img{
+    cursor: pointer;
+   
+}
+
+.svg-icon{
+    cursor: pointer;
+    fill: var(--darkGrayishBlue);
+}
+
+
+svg:hover {
+    fill: var(--strongCyan);
+  }
+
+.footer__social svg:nth-child(2){
+    margin: 0 .5rem;
+}
+
+
+
+
+@media screen and (min-width:1000px){
+
+    .heading{
+        font-size: 2rem;
+    }
+
+    .subheading{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .container__buttons button:nth-child(1){
+        margin-right: 1rem;
+    }
+
+    .container__buttons button:nth-child(2){
+        margin-left: 1rem;
+    }
+
+    .landing:not(.separator){
+        padding: 0;
+    }
+
+    .separator{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .separator .container-img{
+        width: 60%;
+        margin-left: -5rem;
+    }
+
+    .separator .container{
+        width: 40%;
+        text-align: left;
+        padding-left: 10rem;
+    }
+
+    .separator .container article .text{
+       padding-right: 10rem;
+    }
+
+    .separator2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .separator2 .container-img{
+        width: 60%;
+        
+    }
+
+    .icons{
+       
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .icons > article{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+        width: 25%;
+
+    }
+
+    .icons article:nth-child(2){
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .article-icon,.article-text{
+        height: 30%;
+    }
+
+    .article-title{
+        height: 40%;
+    }
+
+    .article-title h1{
+        font-size: 1.5rem;
+    }
+
+    .article-text p{
+      color: var(--grayishBlue);
+    }
+
+    .companies{
+        display: flex;
+        justify-content: space-around;
+    }
+   
+    .landing footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3rem;
+        margin-top: 10rem;
+    }
+
+    .footer__left{
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__logo{
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .footer__links{
+        display: flex;
+        text-align: left;
+        margin-left: 8rem;
+    }
+
+    .footer__links div{
+        margin: 0 2rem;
+    }
+
+    .footer__social{
+        margin-top: 0;
+    }
+}
